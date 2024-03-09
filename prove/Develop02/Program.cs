@@ -1,6 +1,3 @@
-// i added a goal as my extra credit, and it saves the goal in the txt file
-
-
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
