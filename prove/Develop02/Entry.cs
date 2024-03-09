@@ -1,6 +1,8 @@
 using System;
-public class JournalEntry
+public class JournalEntry   // Count of journal entries
 {
+   
+   // Properties for the journal entry
     public int _count = 0;
     public string _prompt;
     public string _answer;
@@ -8,11 +10,8 @@ public class JournalEntry
     public string _title;
     public string _author;
     public string _goal;
-    // an empty list to store data
-    // public List<string> _entries = new List<string> { };
-    // a list of prompts that will be stored in the entry list
-    // with the user input
-
+    
+    // Method to set the values of a journal entr
     public void SetEntry(string title,string author, string prompt,string answer, string goal)
     {
         _prompt = prompt;
@@ -23,6 +22,8 @@ public class JournalEntry
         _date = DateTime.Now.ToString();
 
     }
+
+     // Method to get the formatted entry as a string
     public string GetEntry()
     {
         return ($"Title - {_title}\n" +
@@ -32,6 +33,8 @@ public class JournalEntry
                 $"GOAL - {_goal}\n" +
                 $"Date and time - {_date}\n");
     }
+
+     // Method to display the journal entry
     public void Display()
     {
         Console.WriteLine(GetEntry());
